@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Share Modal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d6f8d105a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <div class="wrapper">
+
+        <div class="card">
+
+            <div>
+                <img src="image.jpeg" alt="image" loading="lazy">
+            </div>
+
+            <div class="name">MRADUL GUPTA</div>
+
+            <div class="designation">Student, MANIT Bhopal</div>
+
+            <div class="btngrp">
+
+                <button class="btn btn1" onclick="openModal()"><i class="fa-solid fa-share"></i>Share My Profile</button>
+                <button class="btn btn2">  <a href="https://www.instagram.com/mradul_gupta_1/" target="_blank">Follow Me</a> </button>
+
+
+            </div>
+
+
+        </div>
+
+    </div> 
+
+    <!--  Modal -->
+
+    <div class="modal">
+
+        <div class="modalHeader">
+            <h1>Share My Profile</h1>
+            <i onclick="closeModal()" class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div>
+
+            <h3>Share this via</h3>
+
+            <div class="icons">
+
+                <a class="icon" id="linkedin" target="_blank" href="https://www.linkedin.com/in/mradul-gupta-077457249/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a class="icon" id="github" target="_blank" href="https://github.com/Mradulgupta1">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a class="icon" id="instagram" target="_blank" href="https://www.instagram.com/mradul_gupta_1/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a class="icon" id="telegram" target="_blank" href="https://t.me/mradul_gupta_1">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+
+                <a class="icon" id="gmail" target="_blank" href="mailto:mradulgupta505@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="overlay" onclick="closeModal()"></div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
